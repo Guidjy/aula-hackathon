@@ -16,8 +16,15 @@ img {
 }
 
 
+button {
+    background-color:lightgoldenrodyellow;
+    width: 100px;
+}
+
+
 #lista {
     border: 2px solid ivory;
+    border-radius: 15%;
     width: 200px;
     padding: 10px;
 }

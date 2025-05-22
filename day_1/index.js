@@ -1,30 +1,30 @@
-let nTarefas = 0;
-const botaoCriar = document.querySelector("#criar-tarefa");
-const botaoDeletar = document.querySelector("#deletar-tarefa");
-const listaDeTarefas = document.querySelector("#lista-de-tarefas");
+let nComidas = 0;
+const botaoCriar = document.querySelector("#criar-comida");
+const botaoDeletar = document.querySelector("#deletar-comida");
+const listaDeComidas = document.querySelector("#lista-de-comidas");
 
 
 botaoCriar.addEventListener("click", () => {
     // cria um elemento HTML de item de lista
-    const tarefa = document.createElement('li');
+    const comida = document.createElement('li');
     // altera o conteúdo do elemento criado
-    tarefa.innerHTML = `tatefa ${nTarefas}`;
-    // insere o elemento na lista de tarefas
-    listaDeTarefas.appendChild(tarefa);
-    // aumenta o número de tarefas na lista
-    nTarefas++;
+    comida.innerHTML = `Comida ${nComidas}`;
+    // insere o elemento na lista de comidas
+    listaDeComidas.appendChild(comida);
+    // aumenta o número de comidas na lista
+    nComidas++;
 });
 
 
 botaoDeletar.addEventListener("click", () => {
     // verifica se a lista está vazia
-    if (nTarefas === 0) {
-        console.log("Lista está vazia. Não se pode remover elementos")
+    if (nComidas === 0) {
+        console.log("Geladeira está vazia. Não se pode remover alimentos")
     } else {
         // remove o último elemento filho da lista
-        listaDeTarefas.removeChild(listaDeTarefas.lastChild);
-        // diminui o número de tarefas na lista
-        nTarefas--;
+        listaDeComidas.removeChild(listaDeComidas.lastChild);
+        // diminui o número de comidas na lista
+        nComidas--;
     }
     
 })
