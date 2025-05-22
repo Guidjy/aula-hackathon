@@ -1,0 +1,23 @@
+body {
+    background-color:cornflowerblue;
+    color:ivory;
+}
+
+
+div {
+    margin-bottom: 30px;
+}
+
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+
+#lista {
+    border: 2px solid ivory;
+    width: 200px;
+    padding: 10px;
+}
